@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@bespoak/eslint-config/eslintrc.json"
+  ]
+}
