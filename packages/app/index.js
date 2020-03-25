@@ -1,3 +1,3 @@
-const funcs = require('typescript/funcs');
+const { exclaim } = require('typescript/funcs');
 
-console.log(funcs.exclaim('hello world'));
+console.log(exclaim('hello world'));
