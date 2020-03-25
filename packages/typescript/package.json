@@ -5,9 +5,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "clean": "rm -rf lib",
     "start": "node lib/pipeline.js",
     "start-dev": "babel-node src/pipeline.ts --extensions \".ts,tsx\"",
     "build": "babel src --out-dir lib --extensions \".ts,tsx\"",
+    "postbuild": "npm run generate-declarations",
+    "generate-declarations": "tsc --outDir lib/ --declaration --emitDeclarationOnly",
     "test": "tsc --noEmit",
     "watch": "yarn build --watch"
   },
