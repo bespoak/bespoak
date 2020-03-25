@@ -4,5 +4,6 @@ setTimeout(() => {
   console.log(1)
 }, 5000)
 
-console.log(exclaim('123'))
-console.log(1)
+exclaim(123)
+
+console.log(exclaim(123))
