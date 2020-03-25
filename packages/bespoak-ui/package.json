@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "exports": {
+    "./": "./lib"
+  },
   "dependencies": {
   },
   "devDependencies": {},

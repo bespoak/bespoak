@@ -1,1 +1,3 @@
-console.log(1);
+const test = require('@bespoak/ui/test');
+
+console.log(test);
