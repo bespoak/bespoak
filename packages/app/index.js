@@ -1,3 +1,3 @@
-const test = require('@bespoak/ui/test');
+const funcs = require('typescript/funcs');
 
-console.log(test);
+console.log(funcs.exclaim('hello world'));

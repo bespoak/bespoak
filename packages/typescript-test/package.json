@@ -1,13 +1,13 @@
 {
-  "name": "typescript",
+  "name": "typescript-test",
   "version": "1.0.0",
-  "main": "lib/pipeline.js",
+  "main": "pipeline.js",
   "license": "MIT",
   "private": true,
   "scripts": {
     "clean": "rm -rf lib",
-    "start": "node lib/pipeline.js",
-    "start-dev": "babel-node src/pipeline.ts --extensions \".ts,tsx\"",
+    "start": "node lib/index.js",
+    "start-dev": "babel-node src/index.ts --extensions \".ts,tsx\"",
     "build": "babel src --out-dir lib --extensions \".ts,tsx\"",
     "postbuild": "npm run generate-declarations",
     "generate-declarations": "tsc --outDir lib/ --declaration --emitDeclarationOnly",
